@@ -21,9 +21,9 @@ return {
         },
     },
     keys = {
-        { "<leader>lr", ":Lspsaga rename<CR>", silent = true },
+        { "<leader>lr", ":Lspsaga rename ++project<CR>", silent = true },
         { "<leader>lc", ":Lspsaga code_action<CR>", silent = true },
-        { "<leader>ld", ":Lspsaga definition<CR>", silent = true },
+        { "<leader>ld", ":Lspsaga goto_definition<CR>", silent = true },
         { "<leader>lh", ":Lspsaga hover_doc<CR>", silent = true },
         { "<leader>li", ":Lspsaga finder<CR>", silent = true },
         { "<leader>ln", ":Lspsaga diagnostic_jump_next<CR>", silent = true },
