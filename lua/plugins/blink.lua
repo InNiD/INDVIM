@@ -41,8 +41,12 @@ return {
             documentation = {
                 auto_show = true,
                 auto_show_delay_ms = 500,
+                window = {
+                    border = "rounded",
+                },
             },
             menu = {
+                border = "rounded",
                 draw = { treesitter = { "lsp" }, },
             },
             trigger = {
@@ -50,7 +54,12 @@ return {
             },
         },
 
-        signature = { enabled = true },
+        signature = {
+            enabled = true,
+            window = {
+                border = "single",
+            },
+        },
 
         -- Default list of enabled providers defined so that you can extend it
         -- elsewhere in your config, without redefining it, due to `opts_extend`
