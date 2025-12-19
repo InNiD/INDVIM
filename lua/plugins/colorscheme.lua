@@ -109,7 +109,7 @@ return {
             -- material, mix, original
             vim.g.gruvbox_material_foreground = "original"
             vim.g.gruvbox_material_enable_italic = true
-            vim.g.gruvbox_material_transparent_background = 0
+            vim.g.gruvbox_material_transparent_background = 1
             vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
             -- default, mix, original
             vim.g.gruvbox_material_statusline_style = "original"

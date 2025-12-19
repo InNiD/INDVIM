@@ -47,11 +47,13 @@ return {
             },
             menu = {
                 border = "rounded",
-                columns = {
-                    { "label", "label_description", gap = 1 },
-                    { "kind_icon", "kind" }
+                draw = {
+                    columns = {
+                        { "label", "label_description", gap = 1 },
+                        { "kind_icon", "kind", gap = 1 },
+                    },
+                    treesitter = { "lsp" },
                 },
-                draw = { treesitter = { "lsp" }, },
             },
             trigger = {
                 show_on_backspace_in_keyword = true,
