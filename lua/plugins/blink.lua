@@ -47,6 +47,10 @@ return {
             },
             menu = {
                 border = "rounded",
+                columns = {
+                    { "label", "label_description", gap = 1 },
+                    { "kind_icon", "kind" }
+                },
                 draw = { treesitter = { "lsp" }, },
             },
             trigger = {
