@@ -1,7 +1,7 @@
 return {
     {
         "catppuccin/nvim",
-        enabled = false,
+        -- enabled = false,
         version = "*",
         lazy = false,
         priority = 1000,
@@ -97,7 +97,7 @@ return {
     },
     {
         "sainnhe/gruvbox-material",
-        -- enabled = false,
+        enabled = false,
         version = "*",
         lazy = false,
         priority = 1000,
