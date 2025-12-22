@@ -13,6 +13,7 @@ vim.opt.scrolloff = 8 -- Minimal number of screen lines to keep above and below 
 vim.opt.confirm = true -- if performing an operation that would fail due to unsaved changes in the buffer, instead raise a dialog asking if you wish to save the current file(s)
 vim.opt.autoread = true
 vim.opt.wrap = false
+vim.opt.virtualedit = "block"
 
 -- Tab
 vim.opt.tabstop = 4 -- number of visual spaces per TAB
@@ -22,7 +23,7 @@ vim.opt.expandtab = true -- tabs are spaces, mainly because of Python
 vim.opt.shiftround = true
 
 -- UI config
--- vim.opt.title = true
+vim.opt.title = true
 vim.opt.number = true -- print the line number in front of each line
 vim.opt.relativenumber = true -- use relative line numbers, so that it is easier to jump with j, k. This will affect the "number"
 vim.opt.cursorline = true -- highlight the line where the cursor is on
@@ -35,7 +36,7 @@ vim.opt.list = true -- Show <tab> and trailing spaces
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.winborder = "rounded"
 -- vim.opt.signcolumn = "yes"
--- vim.opt.cmdheight = 0
+vim.opt.cmdheight = 1
 
 -- Searching
 vim.opt.incsearch = true -- search as characters are entered
