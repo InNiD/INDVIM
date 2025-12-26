@@ -31,7 +31,6 @@ return {
                 vim.lsp.buf.format(format_option)
             end,
             mode = { "n", "v" },
-            desc = "format",
         },
     },
 }

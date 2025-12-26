@@ -1,6 +1,6 @@
 return {
     "mikavilpas/yazi.nvim",
-    version = "*", -- use the latest stable version
+    version = "*",
     dependencies = {
         { "nvim-lua/plenary.nvim", lazy = true },
     },
@@ -11,7 +11,6 @@ return {
             desc = "Open current file",
         },
         {
-            -- Open in the current working directory
             "<leader>ow",
             "<cmd>Yazi cwd<cr>",
             desc = "Open working directory",
@@ -24,7 +23,6 @@ return {
     },
     ---@type YaziConfig | {}
     opts = {
-        -- if you want to open yazi instead of netrw, see below for more info
         open_for_directories = false,
         keymaps = {
             -- show_help = "<f1>",

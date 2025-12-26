@@ -1,13 +1,11 @@
--- define common options
-
 local opts = {
-    silent = true,       -- do not show message
+    silent = true,
 }
-
 -----------------
 -- Normal mode --
 -----------------
 
+-- 使用x或s删除文本时不将删除内容添加到剪切板
 vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "s", '"_s')
 
@@ -28,10 +26,11 @@ vim.keymap.set("i", "jk", "<Esc>")
 -- Visual mode --
 -----------------
 
+-- 使用J和K移动选择的内容
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", opts)
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", opts)
 
--- Hint: start visual mode with the same area as the previous area and the same mode
+-- 缩进后保持visual模式而不是变回normal模式
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
@@ -46,8 +45,6 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 -- All mode --
 --------------
 
--- vim.keymap.set({ "n", "i" }, "<C-z>", "<Cmd>undo<CR>", { silent = true })
-
 -- Map <A-j>, <A-k>, <A-h>, <A-l> to navigate between windows in any modes
 vim.keymap.set({ "t", "i" }, "<A-h>", "<C-\\><C-n><C-w>hi")
 vim.keymap.set({ "t", "i" }, "<A-j>", "<C-\\><C-n><C-w>ji")
@@ -58,6 +55,7 @@ vim.keymap.set({ "n" }, "<A-j>", "<C-w>j")
 vim.keymap.set({ "n" }, "<A-k>", "<C-w>k")
 vim.keymap.set({ "n" }, "<A-l>", "<C-w>l")
 
+-- 分屏和关闭分屏
 vim.keymap.set({ "n", "i", "v", "t"}, "<A-->", "<Cmd>split<CR>")
 vim.keymap.set({ "n", "i", "v", "t"}, "<A-\\>", "<Cmd>vsplit<CR>")
 vim.keymap.set({ "n", "i", "v", "t"}, "<A-c>", "<Cmd>close<CR>")

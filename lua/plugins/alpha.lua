@@ -44,8 +44,8 @@ return {
             -- [[@@@@@ [,@@ ,@g^ "B@@@@@_"/@@@@ @P' @   ;^,q@g @@,9@@@@@@. "]],
             -- [[@@@@@;9 @|!g @ ,.%,__"===>"_   (P__'0@g_ .!@@,9@@ @@@@@@B,*]],
         }
-        require("alpha").setup(
+        require("alpha").setup({
             startify.config
-        )
+        })
     end,
 }

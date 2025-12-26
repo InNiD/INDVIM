@@ -7,9 +7,9 @@ return {
         priority = 1000,
         opts = {
             -- latte, frappe, macchiato, mocha
-            flavour = "macchiato",
+            flavour = "frappe",
             auto_integrations = true,
-            transparent_background = true,
+            -- transparent_background = true,
             term_colors = true,
         },
         config = function(_, opts)
@@ -78,7 +78,7 @@ return {
         "marko-cerovac/material.nvim",
         enabled = false,
         version = "*",
-        -- lazy = false,
+        lazy = false,
         priority = 1000,
         opts = {
             contrast = {
@@ -102,8 +102,6 @@ return {
         lazy = false,
         priority = 1000,
         config = function()
-            -- Optionally configure and load the colorscheme
-            -- directly inside the plugin declaration.
             -- hard, medium, soft
             vim.g.gruvbox_material_background = "soft"
             -- material, mix, original
