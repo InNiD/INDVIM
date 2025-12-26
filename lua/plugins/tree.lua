@@ -12,6 +12,6 @@ return {
         },
     },
     keys = {
-        { "<leader>to", ":NvimTreeToggle<CR>", { silence = true } },
+        { "<leader>nt", ":NvimTreeToggle<CR>", { silence = true } },
     },
 }

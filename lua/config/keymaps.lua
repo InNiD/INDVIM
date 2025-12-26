@@ -58,4 +58,4 @@ vim.keymap.set({ "n" }, "<A-l>", "<C-w>l")
 -- 分屏和关闭分屏
 vim.keymap.set({ "n", "i", "v", "t"}, "<A-->", "<Cmd>split<CR>")
 vim.keymap.set({ "n", "i", "v", "t"}, "<A-\\>", "<Cmd>vsplit<CR>")
-vim.keymap.set({ "n", "i", "v", "t"}, "<A-c>", "<Cmd>close<CR>")
+vim.keymap.set({ "n", "i", "v", "t"}, "<A-w>", "<Cmd>close<CR>")
