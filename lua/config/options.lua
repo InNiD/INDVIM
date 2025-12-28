@@ -33,7 +33,7 @@ vim.opt.splitright = true -- open new horizontal splits right
 vim.opt.termguicolors = true -- enable 24-bit RGB color in the TUI
 vim.opt.showmode = false -- don"t need the "-- INSERT --" mode hint
 vim.opt.list = true -- Show <tab> and trailing spaces
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.winborder = "rounded"
 -- vim.opt.signcolumn = "yes"
 vim.opt.cmdheight = 1
