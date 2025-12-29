@@ -45,5 +45,6 @@ return {
         { "<leader>fg", "<Cmd>Telescope live_grep<CR>", desc = "live grep", silent = true },
         { "<leader>fc", "<Cmd>Telescope git_commits<CR>", desc = "git commits", silent = true },
         { "<leader>fo", "<Cmd>Telescope oldfiles<CR>", desc = "find oldfiles", silent = true },
+        { "<leader>fb", "<Cmd>Telescope buffers<CR>", desc = "Telescope buffers", silent = true }
     },
 }
