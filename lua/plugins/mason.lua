@@ -30,7 +30,7 @@ return {
         setup(
             "verible",
             {
-                cmd = { "verible-verilog-ls" },
+                cmd = { "verible-verilog-ls", "--indentation_spaces=4" },
                 filetypes = { "systemverilog", "verilog" },
                 root_markers = { ".git" },
             }
