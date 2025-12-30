@@ -1,5 +1,6 @@
 return {
     "nvimtools/none-ls.nvim",
+    enabled = false,
     version = "*",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
