@@ -59,5 +59,5 @@ vim.keymap.set("v", ">", ">gv")
 -------------------
 
 -- Use <Esc> to exit terminal mode
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+-- vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
