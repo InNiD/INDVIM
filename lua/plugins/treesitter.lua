@@ -6,7 +6,7 @@ return {
 
     config = function()
         local pattern = {
-            "systemverilog", "markdown", "makrdonw_inline", "html", "latex", "c", "cpp", "python",
+            "systemverilog", "markdown", "markdown_inline", "html", "latex", "c", "cpp", "python",
         }
         local filetype = { "verilog", "systemverilog", "markdown", "html", "c", "cpp", "python" }
         require('nvim-treesitter').install(pattern):wait(300000)
