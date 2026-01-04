@@ -18,11 +18,11 @@ vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.showmode = false -- don't need the "-- INSERT --" mode hint
+vim.opt.signcolumn = "yes"
 vim.opt.title = true
 vim.opt.termguicolors = true -- enable 24-bit RGB color in the TUI
 vim.opt.winborder = "rounded"
 -- vim.opt.colorcolumn = "80"
--- vim.opt.signcolumn = "yes"
 
 -- Edit
 vim.api.nvim_create_autocmd("UIEnter", {
