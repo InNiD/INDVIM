@@ -23,9 +23,9 @@ filetype plugin on
 " set ttimeoutlen=100
 
 " Appear
-set background=dark
+" set background=dark
 " let g:gruvbox_contrast_dark="soft"
-" :colorscheme gruvbox
+colorscheme gruvbox
 syntax on
 set cmdheight=1
 set cursorline
