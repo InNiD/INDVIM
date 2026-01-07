@@ -1,6 +1,10 @@
 " Vim with all enhancements
 " source $VIMRUNTIME/vimrc_example.vim
 
+" Language
+" set langmenu=none
+language en
+
 " Others
 set nocompatible
 let g:mapleader=" "
