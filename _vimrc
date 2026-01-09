@@ -30,6 +30,7 @@ filetype plugin on
 set background=dark
 " let g:gruvbox_contrast_dark="soft"
 " colorscheme gruvbox
+colorscheme nord
 syntax on
 set cmdheight=1
 set cursorline
@@ -39,6 +40,14 @@ set relativenumber
 set ruler
 set showcmd
 set showmode
+set statusline=%f   " filename
+set statusline+=\ %y " filetype
+set statusline+=%m
+set statusline+=%r
+set statusline+=%h
+set statusline+=%w
+set statusline+=%=
+set statusline+=%P\ \ \ \ %l-%c\ 
 set title
 set termguicolors
 set t_Co=256
@@ -49,6 +58,7 @@ autocmd FileType * setlocal formatoptions-=r formatoptions-=o
 set nobackup
 set noundofile
 set showmatch
+set wildoptions=pum
 set virtualedit=block
 
 " Search
@@ -109,6 +119,17 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 vnoremap < <gv
 vnoremap > >gv
+
+" auto comment
+augroup vim
+    autocmd!
+    autocmd FileType vim nnoremap <buffer>gcc I"<space><esc>
+augroup END
+
+augroup verilog
+    autocmd!
+    autocmd FileType verilog nnoremap <buffer>gcc I//<space><esc>
+augroup END
 
 " Use the internal diff if available.
 " Otherwise use the special 'diffexpr' for Windows.
