@@ -53,6 +53,7 @@ set t_Co=256
 
 " Edit
 set clipboard+=unnamed
+set completeopt=menuone,noselect
 autocmd FileType * setlocal formatoptions-=r formatoptions-=o
 set nobackup
 set noundofile
@@ -76,7 +77,7 @@ set tabstop=4
 " Kepmaps
 nnoremap <silent><C-h> :tabp<CR>
 nnoremap <silent><C-l> :tabn<CR>
-nnoremap <Leader>ow :tabe<space>
+nnoremap <Leader>ow :tabe<CR>:Explore<CR>
 " nnoremap <silent><Leader>bh :bn<CR>
 " nnoremap <silent><Leader>bl :bp<CR>
 nnoremap <silent><Leader>bw :bd<CR>
