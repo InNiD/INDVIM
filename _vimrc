@@ -13,16 +13,14 @@ set autoread
 set belloff=all
 set confirm
 set list
-set listchars=tab:>-,trail:·
+set listchars=tab:>\ ,trail:·
 set mouse=a
 set scrolloff=8
 set sidescrolloff=16
 set splitbelow
 set splitright
 set nowrap
-filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
 " set ttimeout
 " set ttimeoutlen=100
 
@@ -40,7 +38,7 @@ set relativenumber
 set ruler
 set showcmd
 set showmode
-set statusline=%f   " filename
+set statusline=\ %f   " filename
 set statusline+=\ %y " filetype
 set statusline+=%m
 set statusline+=%r
@@ -75,9 +73,13 @@ set softtabstop=4
 set tabstop=4
 
 " Kepmaps
-nnoremap <silent><C-h> :bp<CR>
-nnoremap <silent><C-l> :bn<CR>
+nnoremap <silent><C-h> :tabp<CR>
+nnoremap <silent><C-l> :tabn<CR>
+nnoremap <Leader>bn :tabe<space>
+" nnoremap <silent><Leader>bh :bn<CR>
+" nnoremap <silent><Leader>bl :bp<CR>
 nnoremap <silent><Leader>bw :bd<CR>
+nnoremap <silent><Leader>bo :tabo<CR>
 nnoremap <Leader>bp :buffers<CR>:b<space>
 nnoremap <Leader>bc :buffers<CR>:bd<space>
 
@@ -85,27 +87,29 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
-noremap <silent><A--> :split<CR>
-noremap <silent><A-\> :vsplit<CR>
-noremap <silent><A-w> :close<CR>
-noremap <silent><A-o> :only<CR>
-noremap <silent><A-Up> :resize +2<CR>
-noremap <silent><A-Down> :resize -2<CR>
-noremap <silent><A-Left> :vertical resize -2<CR>
-noremap <silent><A-Right> :vertical resize +2<CR>
+nnoremap <silent><A--> :split<CR>
+nnoremap <silent><A-\> :vsplit<CR>
+nnoremap <silent><A-w> :close<CR>
+nnoremap <silent><A-o> :only<CR>
+nnoremap <silent><A-Up> :resize +2<CR>
+nnoremap <silent><A-Down> :resize -2<CR>
+nnoremap <silent><A-Left> :vertical resize -2<CR>
+nnoremap <silent><A-Right> :vertical resize +2<CR>
 
 nnoremap x "_x
 nnoremap s "_s
 nnoremap Y y$
 
-inoremap jk <ESC>
-inoremap <silent><C-h> <C-\><C-n>:bp<CR>i
-inoremap <silent><C-l> <C-\><C-n>:bn<CR>i
+inoremap jk <esc>
+inoremap <silent><C-h> <C-\><C-n>:tabp<CR>i
+inoremap <silent><C-l> <C-\><C-n>:tabn<CR>i
+" inoremap <silent><C-h> <C-\><C-n>:bp<CR>i
+" inoremap <silent><C-h> <C-\><C-n>:bp<CR>i
 
-inoremap <silent><A-h> <C-\><C-n><C-w>hi
-inoremap <silent><A-j> <C-\><C-n><C-w>ji
-inoremap <silent><A-k> <C-\><C-n><C-w>ki
-inoremap <silent><A-l> <C-\><C-n><C-w>li
+inoremap <A-h> <C-\><C-n><C-w>hi
+inoremap <A-j> <C-\><C-n><C-w>ji
+inoremap <A-k> <C-\><C-n><C-w>ki
+inoremap <A-l> <C-\><C-n><C-w>li
 inoremap <silent><A--> <C-\><C-n>:split<CR>i
 inoremap <silent><A-\> <C-\><C-n>:vsplit<CR>i
 inoremap <silent><A-w> <C-\><C-n>:close<CR>i
