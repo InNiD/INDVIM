@@ -8,7 +8,7 @@ language en
 " Others
 set nocompatible
 let g:mapleader=" "
-set autochdir
+" set autochdir
 set autoread
 set belloff=all
 set confirm
@@ -38,6 +38,7 @@ set relativenumber
 set ruler
 set showcmd
 set showmode
+set showtabline=2
 set statusline=\ %f   " filename
 set statusline+=\ %y " filetype
 set statusline+=%m
@@ -75,7 +76,7 @@ set tabstop=4
 " Kepmaps
 nnoremap <silent><C-h> :tabp<CR>
 nnoremap <silent><C-l> :tabn<CR>
-nnoremap <Leader>bn :tabe<space>
+nnoremap <Leader>ow :tabe<space>
 " nnoremap <silent><Leader>bh :bn<CR>
 " nnoremap <silent><Leader>bl :bp<CR>
 nnoremap <silent><Leader>bw :bd<CR>
