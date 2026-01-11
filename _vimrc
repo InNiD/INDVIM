@@ -13,7 +13,7 @@ set autoread
 set belloff=all
 set confirm
 set list
-set listchars=tab:>\ ,trail:·
+set listchars=tab:»\ ,trail:·
 set mouse=a
 set scrolloff=8
 set sidescrolloff=16
@@ -56,6 +56,7 @@ set clipboard+=unnamed
 set completeopt=menuone,noselect
 autocmd FileType * setlocal formatoptions-=r formatoptions-=o
 set nobackup
+set noswapfile
 set noundofile
 set showmatch
 set wildoptions=pum
